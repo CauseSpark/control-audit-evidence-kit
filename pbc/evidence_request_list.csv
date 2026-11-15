@@ -1,0 +1,13 @@
+request_id,controls,evidence_id,request,owner,requested_date,due_date,received_date,status,observed_by_assessor,notes
+PBC-01,AC-2(3),E-01,"Listing of every local, service, and break-glass account in the boundary with enabled flag, last activity, and exception reference",Kiran Patel (Sysadmin),2026-09-21,2026-09-30,2026-09-30,Received,Yes,Query run on 2026-09-30 with the assessor watching
+PBC-02,AC-2,E-02,"Every HR Specialist and HR Administrator role grant from 2026-05-01 to 2026-09-30",Dana Ruiz (System Owner),2026-09-21,2026-09-30,2026-09-30,Received,Yes,Population for the AC-2 sample
+PBC-03,AC-2,E-03,"Access request tickets for the role grants, with manager and ISSO approval dates",Sam Okafor (ISSO),2026-09-30,2026-10-02,2026-10-02,Received,No,Full ticket export provided for the 25 grants; 10 sampled
+PBC-04,AU-6,E-04,"Weekly portal log review tickets for the 12 weeks ending 2026-09-27",Sam Okafor (ISSO),2026-09-21,2026-09-28,2026-09-29,Received,No,One day late
+PBC-05,SI-2,E-05,"Current list of open vulnerability findings with severity and first-detected date",Kiran Patel (Sysadmin),2026-09-21,2026-09-29,2026-09-29,Received,Yes,Exported from the scanner during fieldwork
+PBC-06,RA-5,E-12,"Run history for all authenticated scans from 2026-07-01 to 2026-09-30",Kiran Patel (Sysadmin),2026-09-21,2026-09-30,2026-09-30,Received,No,
+PBC-07,CM-3,E-09,"Change records for every portal change implemented in Q3 2026",Change Manager,2026-09-21,2026-09-28,2026-10-01,Received,No,Three days late; population for the CM-3 sample
+PBC-08,CP-4,E-08,"Most recent contingency plan test or exercise report",Dana Ruiz (System Owner),2026-09-21,2026-09-28,2026-09-29,Not Available,No,No test has been performed; written confirmation provided as E-08
+PBC-09,AT-2,E-10,"Security awareness training completions for every portal HR and administrator role holder",HR Training Coordinator,2026-09-21,2026-09-28,2026-09-28,Received,No,
+PBC-10,AC-6;AT-2,E-11,"Export of HR application roles and infrastructure access for every role holder",Dana Ruiz (System Owner),2026-09-21,2026-09-30,2026-09-30,Received,Yes,
+PBC-11,SI-4,E-13,"Q3 2026 SOC alert summary for detections covering the portal boundary",SOC Manager,2026-09-21,2026-09-28,2026-10-02,Received,No,Four days late
+PBC-12,IA-2(1),E-14,"Current authorization of the Enterprise Identity Service and confirmation of the portal MFA policy",Identity Services Manager,2026-09-21,2026-09-28,2026-09-30,Received,No,Two days late

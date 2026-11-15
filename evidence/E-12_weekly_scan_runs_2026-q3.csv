@@ -1,0 +1,14 @@
+scan_date,scope,scan_type,status,assets_scanned
+2026-07-05,"8 assets (4 VMs, DB, LB, bucket, jump host)",Credentialed,Success,8/8
+2026-07-12,"8 assets (4 VMs, DB, LB, bucket, jump host)",Credentialed,Success,8/8
+2026-07-19,"8 assets (4 VMs, DB, LB, bucket, jump host)",Credentialed,Success,8/8
+2026-07-26,"8 assets (4 VMs, DB, LB, bucket, jump host)",Credentialed,Success,8/8
+2026-08-02,"8 assets (4 VMs, DB, LB, bucket, jump host)",Credentialed,Success,8/8
+2026-08-09,"8 assets (4 VMs, DB, LB, bucket, jump host)",Credentialed,Success,8/8
+2026-08-16,"8 assets (4 VMs, DB, LB, bucket, jump host)",Credentialed,Success,8/8
+2026-08-23,"8 assets (4 VMs, DB, LB, bucket, jump host)",Credentialed,Success,8/8
+2026-08-30,"8 assets (4 VMs, DB, LB, bucket, jump host)",Credentialed,Success,8/8
+2026-09-06,"8 assets (4 VMs, DB, LB, bucket, jump host)",Credentialed,Success,8/8
+2026-09-13,"8 assets (4 VMs, DB, LB, bucket, jump host)",Credentialed,Success,8/8
+2026-09-20,"8 assets (4 VMs, DB, LB, bucket, jump host)",Credentialed,Success,8/8
+2026-09-27,"8 assets (4 VMs, DB, LB, bucket, jump host)",Credentialed,Success,8/8

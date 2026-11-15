@@ -1,0 +1,6 @@
+detection,controls_supported,alerts,tickets_opened,triaged_within_sla,true_positives
+Repeated SSH authentication failures on jump host,AC-7;AU-6;SI-4,14,14,14,0
+New sudoers entry or admin group change,AC-2(4);AC-6(9);SI-4,6,6,6,0
+Audit daemon stopped or log file cleared,AU-9;AU-6;SI-4,2,2,2,0
+Off-hours privileged session on jump host,AC-2(12);AC-6(9);AU-6,9,9,8,0
+Outbound transfer over 1 GB from app VM,SI-4;SC-7,1,1,1,0

@@ -1,0 +1,8 @@
+finding_id,component,severity,first_detected,status
+V-1031,app VMs: PDF rendering library 3.1.2,Moderate,2026-07-06,Open
+V-1044,app VMs: XML parsing library 2.9.0,Moderate,2026-07-13,Open
+V-1102,jump host: OpenSSH client package,Moderate,2026-09-17,Open
+V-1107,app VMs: kernel package,High,2026-09-20,Open
+V-1088,load balancer: HTTP header disclosure,Low,2026-08-24,Open
+V-1095,app VMs: outdated timezone data package,Low,2026-09-03,Open
+V-1110,PostgreSQL: informational version banner,Low,2026-09-27,Open

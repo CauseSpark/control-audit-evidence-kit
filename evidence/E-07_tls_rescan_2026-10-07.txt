@@ -1,0 +1,20 @@
+TLS configuration scan (fictional output)
+Target:    hr.acme-example.internal:443  (Acme HR Portal load balancer)
+Scan date: 2026-10-07 14:02 ET
+Scanner:   Acme Internal Audit scan workstation AUD-07
+Note:      Rescan after change CHG-2026-0219 applied the TLS 1.2+ policy
+
+Protocol support
+  SSLv2     not offered
+  SSLv3     not offered
+  TLSv1.0   not offered
+  TLSv1.1   not offered
+  TLSv1.2   offered
+  TLSv1.3   offered
+
+Certificate
+  Subject:  hr.acme-example.internal
+  Expires:  2027-05-02
+  Key:      RSA 2048
+
+Result: no protocol versions below TLS 1.2 are offered.

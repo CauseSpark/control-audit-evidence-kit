@@ -1,0 +1,23 @@
+change_id,summary,requested_date,approved_date,approver,tested_before_release,implemented_date,emergency
+CHG-2026-0150,Apply OS patches to app VMs,2026-07-03,2026-07-04,Change Advisory Board,Yes,2026-07-06,No
+CHG-2026-0153,Rotate load balancer certificate,2026-07-03,2026-07-06,Change Advisory Board,Yes,2026-07-10,No
+CHG-2026-0156,Deploy release 2.1,2026-07-09,2026-07-11,Change Advisory Board,Yes,2026-07-13,No
+CHG-2026-0159,Increase DB storage,2026-07-12,2026-07-13,Change Advisory Board,Yes,2026-07-16,No
+CHG-2026-0162,Update WAF rule set,2026-07-18,2026-07-19,Change Advisory Board,Yes,2026-07-21,No
+CHG-2026-0165,Deploy release 2.2,2026-07-19,2026-07-21,Change Advisory Board,Yes,2026-07-25,No
+CHG-2026-0168,Add benefits API endpoint,2026-07-24,2026-07-26,Change Advisory Board,Yes,2026-07-28,No
+CHG-2026-0171,Patch jump host,2026-07-27,2026-07-29,Change Advisory Board,Yes,2026-07-30,No
+CHG-2026-0174,Change backup retention to 35 days,2026-07-29,2026-07-31,Change Advisory Board,Yes,2026-08-01,No
+CHG-2026-0177,Update log forwarding config,2026-08-03,2026-08-04,Change Advisory Board,Yes,2026-08-05,No
+CHG-2026-0180,Apply OS patches to app VMs,2026-08-04,2026-08-07,Change Advisory Board,Yes,2026-08-10,No
+CHG-2026-0183,Deploy release 2.2.1 hotfix,2026-08-08,2026-08-10,ISSO (emergency),Yes,2026-08-14,Yes
+CHG-2026-0186,Add SFTP source IP allowlist,2026-08-10,2026-08-12,Change Advisory Board,Yes,2026-08-16,No
+CHG-2026-0189,Update CIS hardening baseline,2026-08-14,2026-08-17,Change Advisory Board,Yes,2026-08-19,No
+CHG-2026-0192,Patch PostgreSQL minor version,2026-08-15,2026-08-18,Change Advisory Board,Yes,2026-08-22,No
+CHG-2026-0195,Deploy release 2.3,2026-08-19,2026-08-22,Change Advisory Board,Yes,2026-08-26,No
+CHG-2026-0198,Resize app VM,2026-08-25,2026-08-28,Change Advisory Board,Yes,2026-08-29,No
+CHG-2026-0201,Apply OS patches to app VMs,2026-09-01,2026-09-02,Change Advisory Board,Yes,2026-09-03,No
+CHG-2026-0204,Update session timeout to 15 minutes,2026-09-02,2026-09-05,Change Advisory Board,Yes,2026-09-06,No
+CHG-2026-0207,Patch jump host,2026-09-01,2026-09-04,Change Advisory Board,Yes,2026-09-08,No
+CHG-2026-0210,Update monitoring agent,2026-09-04,2026-09-07,Change Advisory Board,Yes,2026-09-11,No
+CHG-2026-0213,Rotate SFTP host key,2026-09-08,2026-09-11,Change Advisory Board,Yes,2026-09-13,No

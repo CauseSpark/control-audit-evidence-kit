@@ -1,0 +1,15 @@
+evidence_id,file,description,evidence_type,source_system,generated_date,provided_by,sha256
+E-01,E-01_local_service_accounts_2026-09-30.csv,"Local, service, and break-glass accounts with last activity",export,Portal VMs and database (query),2026-09-30,Kiran Patel (Sysadmin),f8964fdc1bbb9b8d0932787ee1f16e1b18d30abf90ca78b61941d0c5357e1bca
+E-02,E-02_hr_role_grants_2026-05-01_to_2026-09-30.csv,HR application role grants since pilot start,export,Portal admin console,2026-09-30,Dana Ruiz (System Owner),fdfe03719232f7bc8000523934430bd9b7a5fd3f2ca3f313231dbf24a61102db
+E-03,E-03_access_request_tickets.csv,Access request tickets with approval dates,export,IT service desk,2026-10-02,Sam Okafor (ISSO),9e78e4b7288a2998c3a2d352e62f416e7bdfca781b5f21d5e00c3b894ebd1d98
+E-04,E-04_audit_review_tickets_2026-07-06_to_2026-09-27.csv,Weekly portal log review tickets,export,IT service desk,2026-09-29,Sam Okafor (ISSO),77352873ee3bdf26d717cf08aac079989d568c087fabe9ea873d1b203ac6b54a
+E-05,E-05_open_vulnerabilities_2026-09-29.csv,Open vulnerability findings,report,Vulnerability scanner,2026-09-29,Kiran Patel (Sysadmin),c4009dcc5525eb80f21b26cbda601183321093d2d36a5e60ccb1233f4b2c1596
+E-06,E-06_tls_scan_2026-09-30.txt,TLS scan of the load balancer,report,Assessor scan workstation,2026-09-30,Internal Audit,aad5c805fbbe814b7d1875e145650bd9741056675b087631d1dce1a8fe0c2886
+E-07,E-07_tls_rescan_2026-10-07.txt,TLS rescan after the policy change,report,Assessor scan workstation,2026-10-07,Internal Audit,a42762a1c2acf4faf8c2c06cbaeaef13a019eb024ea8bd538407598b5dea1029
+E-08,E-08_contingency_test_response_2026-09-29.md,System owner confirmation that no CP test has been run,document,Memo,2026-09-29,Dana Ruiz (System Owner),487d4aa5246ad047101c244238adeb4b9637f2c687036ebe9a8c7b2615080e90
+E-09,E-09_change_records_2026-q3.csv,Q3 2026 change records,export,Change management system,2026-10-01,Change Manager,ff0c2712fe66532496c59a2664f8fd99e75df7b851707606baf79fbc008c571e
+E-10,E-10_training_completions_2026-09-30.csv,Awareness training completions,export,Learning management system,2026-09-30,HR Training Coordinator,85abf19f0b0f79c80fec90fdfb112b006abcf50166b688ed161c7aa7bd5bca71
+E-11,E-11_role_assignments_2026-09-30.csv,HR application roles and infrastructure access,export,Portal admin console,2026-09-30,Dana Ruiz (System Owner),fe97db09ab53279b3217e1eed3edcc158f99125550fab46bfa61ec40b1da8eeb
+E-12,E-12_weekly_scan_runs_2026-q3.csv,Authenticated scan run history,report,Vulnerability scanner,2026-09-30,Kiran Patel (Sysadmin),74e6149b356ddf15398cd09ed900097bf6c930f104bcf78b17740911b096586a
+E-13,E-13_soc_alert_summary_2026-q3.csv,SOC alert summary for the portal boundary,report,SOC platform,2026-10-02,SOC Manager,e34d7cfd192408604631f1e197ef5caa1f600c9e24d3ee252e45062d9843f1a9
+E-14,E-14_identity_service_authorization_summary.md,Identity Service authorization and portal MFA policy,document,Memo,2026-09-30,Identity Services Manager,5a737c6b9e3f215e059c4f49828d7149a7bb8dc716a78d9fd888f0ad58b5573d
