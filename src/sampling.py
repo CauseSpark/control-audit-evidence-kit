@@ -64,9 +64,13 @@ def select_sample(items: list[str], size: int, seed: int) -> list[str]:
     return sorted(chosen)
 
 
-def load_population(path: Path, id_column: str) -> list[str]:
+def read_csv(path: Path) -> list[dict]:
     with open(path, newline="", encoding="utf-8") as f:
-        rows = list(csv.DictReader(f))
+        return list(csv.DictReader(f))
+
+
+def load_population(path: Path, id_column: str) -> list[str]:
+    rows = read_csv(path)
     if rows and id_column not in rows[0]:
         raise ValueError(f"column '{id_column}' not found in {path.name}")
     return [r[id_column] for r in rows]

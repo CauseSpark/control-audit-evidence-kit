@@ -25,6 +25,8 @@ from dataclasses import dataclass, field
 from datetime import date, timedelta
 from pathlib import Path
 
+from sampling import read_csv
+
 ROOT = Path(__file__).resolve().parent.parent
 FIELDWORK_START = date(2026, 9, 28)
 FIELDWORK_END = date(2026, 10, 9)
@@ -56,11 +58,6 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: f.read(65536), b""):
             h.update(chunk)
     return h.hexdigest()
-
-
-def read_csv(path: Path) -> list[dict]:
-    with open(path, newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
 
 
 def split_ids(value: str) -> list[str]:

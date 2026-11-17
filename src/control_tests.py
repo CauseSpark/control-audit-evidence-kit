@@ -9,15 +9,13 @@ the evidence folder and prints a summary that lines up with the workpapers.
 
 from __future__ import annotations
 
-import csv
 import re
 import sys
 from dataclasses import dataclass, field
 from datetime import date, timedelta
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from sampling import sample_size_for_population, select_sample  # noqa: E402
+from sampling import read_csv, sample_size_for_population, select_sample
 
 ROOT = Path(__file__).resolve().parent.parent
 EVIDENCE = ROOT / "evidence"
@@ -49,11 +47,6 @@ def d(value: str) -> date:
     return date.fromisoformat(value)
 
 
-def read_csv(path: Path) -> list[dict]:
-    with open(path, newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
-
-
 def evidence_file(evidence_id: str) -> Path:
     matches = sorted(EVIDENCE.glob(f"{evidence_id}_*"))
     if len(matches) != 1:
@@ -61,14 +54,18 @@ def evidence_file(evidence_id: str) -> Path:
     return matches[0]
 
 
+def draw_sample(rows: list[dict], id_column: str, seed: int) -> tuple[dict[str, dict], list[str]]:
+    """Index the population by ID and draw the methodology sample from it."""
+    by_id = {r[id_column]: r for r in rows}
+    return by_id, select_sample(list(by_id), sample_size_for_population(len(rows)), seed)
+
+
 # --- Tests ----------------------------------------------------------------
 
 def test_access_approvals(grants: list[dict], tickets: list[dict], seed: int) -> TestResult:
     """AC-2: each sampled role grant has manager and ISSO approval on or before the grant date."""
     by_ticket = {t["ticket_id"]: t for t in tickets}
-    by_grant = {g["grant_id"]: g for g in grants}
-    size = sample_size_for_population(len(grants))
-    sample = select_sample(list(by_grant), size, seed)
+    by_grant, sample = draw_sample(grants, "grant_id", seed)
     res = TestResult("AC-2", "Role grants approved before access was given", len(grants), len(sample))
     for gid in sample:
         g = by_grant[gid]
@@ -143,9 +140,7 @@ def test_weekly_reviews(tickets: list[dict], first_week: date, weeks: int) -> Te
 
 def test_change_records(changes: list[dict], seed: int) -> TestResult:
     """CM-3: each sampled change was approved and tested before it was implemented."""
-    by_id = {c["change_id"]: c for c in changes}
-    size = sample_size_for_population(len(changes))
-    sample = select_sample(list(by_id), size, seed)
+    by_id, sample = draw_sample(changes, "change_id", seed)
     res = TestResult("CM-3", "Changes approved and tested before implementation", len(changes), len(sample))
     for cid in sample:
         c = by_id[cid]
